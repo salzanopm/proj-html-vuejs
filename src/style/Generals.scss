@@ -1,0 +1,48 @@
+// IMPORT AREA
+@import './Variables.scss';
+
+// RESET 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// IMG RESET 
+img {
+    width: 100%;
+}
+
+// CONTAINER
+.container80 {
+    width: 80%;
+}
+
+// BUTTONS
+button {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: white;
+}
+
+.button-red {
+    background-color: $brand_primary_color;
+    border: solid 1px $brand_primary_color
+}
+
+.button-transparent {
+    background-color: transparent;
+    border: solid 1px white
+}
+
+// TEXT
+h1 {
+    font-size: 125px;
+    color: white;
+}
+
+h4 {
+    color: white;
+    margin: 10px 0;
+    font-size: larger;
+}
