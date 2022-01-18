@@ -5,26 +5,23 @@
         <img src="../assets/img/logo_footer.png" alt="Avada image logo">
       </div>
       <div>
-        <ul class="list-container">
-          <li class="common-text2"><a href="#">1</a></li>
-          <li class="common-text2"><a href="#">1</a></li>
-          <li class="common-text2"><a href="#">1</a></li>
-          <li class="common-text2"><a href="#">1</a></li>
-          <li class="common-text2"><a href="#">1</a></li>
-          <li class="common-text2"><a href="#">1</a></li>
+        <ul class="list-container common-text2">
+          <li v-for="(link, index) in links" :key="index" :class="{ current: link.current }">
+            <a :href="link.url">{{ link.text }}</a>
+          </li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <div>
-        <ul class="list-container">
-          <li>1</li>
+        <ul class="list-container common-text3">
+          <li>&copy; Copyright 2012 - 2021</li>
           <li>|</li>
-          <li>1</li>
+          <li>AVADA THEME BY THEMEFUSION</li>
           <li>|</li>
-          <li>1</li>
+          <li>ALL RIGHT RESERVED</li>
           <li>|</li>
-          <li>1</li>
+          <li>POWERED BY WORDPRESS</li>
         </ul>
       </div>
       <div>
@@ -47,7 +44,12 @@
 <script>
 export default {
   name: "Header",
-};
+  props: ['links'],
+  data: function() {
+    return {
+    };
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -116,5 +118,11 @@ export default {
     position: absolute; 
     bottom: 5px;
     right: 35px;
+  }
+
+  li {
+    &.current {
+      color: white;
+    }
   }
 </style>

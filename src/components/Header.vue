@@ -1,5 +1,5 @@
 <template>
-  <header> 
+  <header id="Home"> 
     <div class="header-top">
       <div class="logo-container">
         <img src="../assets/img/avada-music-logo.png" alt="Avada image logo">

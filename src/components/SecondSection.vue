@@ -1,5 +1,5 @@
 <template>
-    <section class="second-section"> 
+    <section id="latest-news" class="second-section"> 
         <div class="container65">
             <h2 class="upperline">
                 Latest band news
