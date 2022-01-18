@@ -15,6 +15,12 @@ img {
     height: inherit;
 }
 
+// LIST RESET 
+li {
+    list-style-type: none;
+    margin: 5px;
+}
+
 // CONTAINER
 .container65 {
     width: 65%;
@@ -59,11 +65,7 @@ hr {
     display: inline-block;
     margin: auto;
     border: none;
-    border-bottom: solid 1px $medium_text_color;
-    
-   
-    
-    
+    border-bottom: solid 1px $medium_text_color;   
 }
 
 // TEXT
@@ -78,6 +80,10 @@ h2 {
 h4 {
     margin: 10px 0;
     font-size: larger;
+}
+
+h5 {
+    font-size: large;
 }
 
 .common-text2 {

@@ -13,30 +13,48 @@
                     <div class="left-column">
                         <div class="box">
                             <div class="top-box">
-
+                                <div class="text-card">
+                                    <h5>weweewewe</h5>
+                                    <p class="common-text2">efffeef</p>
+                                </div>
                             </div>
                             <div class="middle-box">
                                 <div class="case">
                                     <div class="left-case">
-
+                                        <div class="text-card">
+                                        <h5>weweewewe</h5>
+                                        <p class="common-text2">efffeef</p>
+                                    </div>  
                                     </div>
                                     <div class="right-case">
-
+                                        <div class="text-card">
+                                            <h5>weweewewe</h5>
+                                            <p class="common-text2">efffeef</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="bottom-box">
-
+                                <div class="text-card">
+                                    <h5>weweewewe</h5>
+                                    <p class="common-text2">efffeef</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="right-column">
                         <div class="row">
                             <div class="up-row">
-
+                                <div class="text-card">
+                                    <h5>weweewewe</h5>
+                                    <p class="common-text2">efffeef</p>
+                                </div>
                             </div>
                             <div class="down-row">
-
+                                <div class="text-card">
+                                    <h5>weweewewe</h5>
+                                    <p class="common-text2">efffeef</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -69,10 +87,10 @@ export default {
 
     .picture-section {
         height: 850px;
-        border: solid 1px black;
         margin: 30px 0;
-
+        text-align: left;
     }
+
     .row {
         height: inherit;
     }
@@ -111,7 +129,7 @@ export default {
 
     div[class$="-row"] {
         float: left;
-        height: 50%;
+        height: calc(50% - 5px);
     }
 
     div[class$="-case"] {
@@ -125,52 +143,96 @@ export default {
     }
 
     .top-box {
-        height: 25%;
-        border: solid 1px white;
+        height: calc(25% - 5px);
+        background-image: url('../assets/img/blog_music_techo.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-bottom: 5px;
+
     }
 
     .bottom-box {
-        height: 25%;
-        border: solid 1px white;
+        height: calc(25% - 5px);
+        background-image: url('../assets/img/blog_flavor_rock.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-top: 5px;
     }
 
     .middle-box {
-        height: 50%;
-        border: solid 1px white;
+        height: calc(50% - 10px);
+        margin: 5px 0;
     }
 
     .left-case {
-        width: 50%;
-        border: solid 1px white;
+        width: calc(50% - 5px);
+        background-image: url('../assets/img/blog-post3.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-right: 5px;
     }
 
     .right-case {
-        width: 50%;
-        border: solid 1px white;
+        width: calc(50% - 5px);
+        background-image: url('../assets/img/blog-post4.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-left: 5px;
     }
 
 
 
     .up-row {
         width: 100%;
-        border: solid 1px white;
+        height: calc(100% - 5px);
+        background-image: url('../assets/img/blog-post1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-bottom: 5px;
     }
 
     .down-row {
         width: 100%;
-        border: solid 1px white;
+        height: calc(100% - 5px);
+        background-image: url('../assets/img/blog-post2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-top: 5px;
     }
 
 
     .left-column {
-        width: 65%;
-        border: solid 1px white;
+        width: calc(65% - 5px);
+        margin-right: 5px;
     }
 
     .right-column {
-        width: 35%;
-        border: solid 1px green;
+        width: calc(35% - 5px);
+        margin-left: 5px;
     }
+
+    .text-card {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        background-color: $brand_secondary_color;
+    }
+
+    h5 {
+        height: 50%;
+        padding: 10px;
+        color: $brand_primary_color;
+    }
+
 
 
 
