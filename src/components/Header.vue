@@ -39,10 +39,15 @@ export default {
     background-size: cover;
   
     .header-top {
+      height: 50px;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
+  }
+
+  .logo-container {
+    height: 100%;
   }
 
   .burger-menu-container {
