@@ -6,8 +6,8 @@
       </div>
       <div>
         <ul class="list-container common-text-medium">
-          <li v-for="(link, index) in links" :key="index" :class="{ current: link.current }">
-            <a :href="link.url">{{ link.text }}</a>
+          <li v-for="(linkFooter, index) in linksFooter" :key="index" :class="{ current: linkFooter.current }">
+            <a :href="linkFooter.url">{{ linkFooter.text }}</a>
           </li>
         </ul>
       </div>
@@ -44,7 +44,7 @@
 <script>
 export default {
   name: "Header",
-  props: ['links'],
+  props: ['linksFooter'],
   data: function() {
     return {
     };

@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <Header />
+    <Header :linksHeader="linksHeaderArray" />
     <FirstSection />
     <SecondSection />
     <ButtonBig />
     <ThirdSection />
     <FourthSection />
     <ButtonBig2 />
-    <Footer :links="linksArray" />
+    <Footer :linksFooter="linksFooterArray" />
   </div>
 </template>
 
 <script>
+// IMPORT COMPONENTS AREA
 import Header from "./components/Header.vue";
 import FirstSection from "./components/FirstSection.vue";
 import SecondSection from "./components/SecondSection.vue";
@@ -34,7 +35,41 @@ export default {
   },
   data: function() {
     return {
-      linksArray: [
+      // array Header
+      linksHeaderArray: [
+        {
+          text: 'Home',
+          url: '#Home',
+          current: true,
+        },
+        {
+          text: 'Meet the band',
+          url: '#meet-the-band',
+          current: false,
+        },
+        {
+          text: 'Live dates',
+          url: '#live-dates',
+          current: false,
+        },
+        {
+          text: 'Latest News',
+          url: '#latest-news',
+          current: false,
+        },
+        {
+          text: 'Abums',
+          url: '#',
+          current: false,
+        },
+        {
+          text: 'Fans',
+          url: '#',
+          current: false,
+        }
+      ],
+      // array footer
+      linksFooterArray: [
         {
           text: 'Home',
           url: '#Home',
@@ -76,5 +111,4 @@ export default {
   @import './style/Generals';
   // import style variables
    @import './style/Variables';
-   
 </style>

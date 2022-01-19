@@ -29,7 +29,7 @@ a {
     color:inherit;
 }
 
-// CONTAINER
+// CONTAINERS
 .container65 {
     width: 65%;
     margin: auto;
@@ -69,6 +69,7 @@ button:active {
     background-color: $brand_primary_color;
     border: solid 1px $brand_primary_color;
 }
+
 .button-big:hover {
     background-color: white;
     border: solid 1px white;
@@ -85,7 +86,7 @@ hr {
     border-bottom: solid 1px $medium_text_color;   
 }
 
-// TEXT
+// TITLES
 h1 {
     font-size: 120px;
 }
@@ -102,6 +103,8 @@ h4 {
 h5 {
     font-size: large;
 }
+
+// TEXT
 
 .common-text-big {
     font-size: 15px;
