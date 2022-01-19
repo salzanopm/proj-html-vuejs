@@ -37,12 +37,12 @@
       </div>
       <div class="header-bottom-closed">
         <ul>
-          <li>Home</li>
-          <li>Meet the band</li>
-          <li>Live dates</li>
-          <li>Latest news</li>
-          <li>Albums</li>
-          <li>Fans</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#meet-the-band">Meet the band</a></li>
+          <li><a href="#live-dates">Live dates</a></li>
+          <li><a href="#latest-news">Latest news</a></li>
+          <li><a href="#">Albums</a></li>
+          <li><a href="#">Fans</a></li>
         </ul>
       </div>
     </div>

@@ -97,6 +97,7 @@ export default {
     align-items: center;
     justify-content: center;
     border-radius: 2px;
+    cursor: pointer;
   }
 
   .logo-container {

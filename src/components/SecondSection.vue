@@ -15,8 +15,8 @@
                             <div class="single-card-top-box">
                                 <div class="overlay"></div>
                                 <div class="text-card">
-                                    <h5>weweewewe</h5>
-                                    <p class="common-text-medium">efffeef</p>
+                                    <h5>Tecnology and music</h5>
+                                    <p class="common-text-medium">sed sit amet sent turpis curabitur cursur lacinia est at interdum risus id condimentum</p>
                                 </div>
                             </div>
                             <div class="middle-box">
@@ -24,15 +24,15 @@
                                     <div class="single-card-left-case">
                                         <div class="overlay"></div>
                                         <div class="text-card">
-                                        <h5>weweewewe</h5>
-                                        <p class="common-text-medium">efffeef</p>
+                                        <h5>Taking it back to the old school</h5>
+                                        <p class="common-text-medium">sed sit amet sent turpis curabitur cursur lacinia est at interdum risus id condimentum</p>
                                     </div>  
                                     </div>
                                     <div class="single-card-right-case">
                                         <div class="overlay"></div>
                                         <div class="text-card">
-                                            <h5>weweewewe</h5>
-                                            <p class="common-text-medium">efffeef</p>
+                                            <h5>While my guitar gently weeps</h5>
+                                            <p class="common-text-medium">sed sit amet sent turpis curabitur cursur lacinia est at interdum risus id condimentum</p>
                                         </div>
                                     </div>
                                 </div>
@@ -40,8 +40,8 @@
                             <div class="single-card-bottom-box">
                                 <div class="overlay"></div>
                                 <div class="text-card">
-                                    <h5>weweewewe</h5>
-                                    <p class="common-text-medium">efffeef</p>
+                                    <h5>It just sounds better</h5>
+                                    <p class="common-text-medium">sed sit amet sent turpis curabitur cursur lacinia est at interdum risus id condimentum</p>
                                 </div>
                             </div>
                         </div>
@@ -51,15 +51,15 @@
                             <div class="single-card-up-row">
                                 <div class="overlay"></div>
                                 <div class="text-card">
-                                    <h5>weweewewe</h5>
-                                    <p class="common-text-medium">efffeef</p>
+                                    <h5>The flavor of rock</h5>
+                                    <p class="common-text-medium">sed sit amet sent turpis curabitur cursur lacinia est at interdum risus id condimentum</p>
                                 </div>
                             </div>
                             <div class="single-card-down-row">
                                 <div class="overlay"></div>
                                 <div class="text-card">
-                                    <h5>weweewewe</h5>
-                                    <p class="common-text-medium">efffeef</p>
+                                    <h5>Sharing the stage with a legend</h5>
+                                    <p class="common-text-medium">sed sit amet sent turpis curabitur cursur lacinia est at interdum risus id condimentum</p>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +87,8 @@ export default {
         }
 
         p {
-            margin: 10px;
+            margin-top: 5px;
+            margin-left: 5px;
         }
     }  
 
@@ -246,7 +247,8 @@ export default {
 
     h5 {
         height: 50%;
-        padding: 10px;
+        margin-top: 5px;
+        margin-left: 5px;
         color: $brand_primary_color;
     }
 

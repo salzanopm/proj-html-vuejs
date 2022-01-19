@@ -8,7 +8,6 @@
     <FourthSection />
     <ButtonBig2 />
     <Footer :links="linksArray" />
-    <Test />
   </div>
 </template>
 
@@ -21,7 +20,6 @@ import ThirdSection from "./components/ThirdSection.vue";
 import FourthSection from "./components/FourthSection.vue";
 import ButtonBig2 from "./components/ButtonBig2.vue";
 import Footer from "./components/Footer.vue";
-import Test from "./components/Test.vue";
 export default {
   name: "App",
   components: {
@@ -33,7 +31,6 @@ export default {
     FourthSection,
     ButtonBig2,
     Footer,
-    Test,
   },
   data: function() {
     return {
