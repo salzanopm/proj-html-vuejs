@@ -1,5 +1,7 @@
 <template>
+  <!-- start footer -->
   <footer> 
+    <!-- start footer top -->
     <div class="footer-top">
       <div class="logo-container">
         <img src="../assets/img/logo_footer.png" alt="Avada image logo">
@@ -12,18 +14,20 @@
         </ul>
       </div>
     </div>
+    <!-- end footer top -->
+    <!-- start bottom footer -->
     <div class="footer-bottom">
-      <div>
+      <!-- start first list -->
+      <div class="footer-bottom-first-list">
         <ul class="list-container common-text-small">
-          <li>&copy; Copyright 2012 - 2021</li>
-          <li>|</li>
-          <li>AVADA THEME BY THEMEFUSION</li>
-          <li>|</li>
-          <li>ALL RIGHT RESERVED</li>
-          <li>|</li>
-          <li>POWERED BY WORDPRESS</li>
+          <li>&copy; Copyright 2012 - 2021 |</li>
+          <li> AVADA THEME BY THEMEFUSION |</li>
+          <li> ALL RIGHT RESERVED |</li>
+          <li> POWERED BY WORDPRESS</li>
         </ul>
       </div>
+      <!-- end first list -->
+      <!-- start second list -->
       <div>
         <ul class="list-container">
           <li class="icon-container"><i class="fab fa-twitter fa-xs"></i></li>
@@ -32,13 +36,16 @@
           <li class="icon-container"><i class="fab fa-youtube fa-xs"></i></li>
         </ul>
       </div>
+      <!-- end second list -->  
     </div>
+    <!-- end footer bottom -->
     <div class="chevron-container">
       <span class="chevron-icon-container">
         <i class="fas fa-chevron-up"></i>
       </span>
     </div>
   </footer>
+  <!-- end footer -->
 </template>
 
 <script>
@@ -54,12 +61,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import "../style/Variables.scss";
+  // IMPORT AREA
+  @import "../style/Variables.scss";
+
   footer {
     height: 180px;
     text-align: center;
     
-  
     .footer-top {
       padding: 20px;
       height: 120px;

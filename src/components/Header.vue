@@ -2,7 +2,7 @@
   <!-- start menu wrapper -->
   <div class="menu-wrapper">
     <!-- start header with static menu -->
-    <header id="Home" :class="{hide:colorfull}"> 
+    <header id="Home" :class="{hide:active}"> 
       <!-- start menu closed -->
       <div class="menuclosed">
         <!-- start top menu -->
@@ -11,7 +11,7 @@
             <img src="../assets/img/avada-music-logo.png" alt="Avada image logo">
           </div>
           <div class="burger-menu-container">
-            <i v-on:click="colorfull=!colorfull" class="fas fa-bars fa-2x"></i>
+            <i v-on:click="active=!active" class="fas fa-bars fa-2x"></i>
           </div>
         </div>
         <!-- end top menu -->
@@ -32,7 +32,7 @@
     </header>
     <!-- start header with static menu -->
     <!-- start second header menu open -->
-    <div :class="{show:colorfull}" class="headeropen">
+    <div :class="{show:active}" class="headeropen">
       <!-- start menu open -->
       <div class="menuopen">
         <!-- start header top -->
@@ -41,7 +41,7 @@
             <img src="../assets/img/avada-music-logo.png" alt="Avada image logo">
           </div>
           <div  class="burger-menu-container">
-            <i v-on:click="colorfull=!colorfull" class="fas fa-times fa-lg"></i>
+            <i v-on:click="active=!active" class="fas fa-times fa-lg"></i>
           </div>
         </div>
         <!-- end header top -->
@@ -74,7 +74,7 @@ export default {
   props: ['linksHeader'],
   data() {
     return {
-        colorfull:false
+        active:false
     }
   }
 };

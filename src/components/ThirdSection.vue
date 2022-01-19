@@ -1,5 +1,7 @@
 <template>
+    <!-- start section -->
     <section id="meet-the-band">
+        <!-- start content -->
         <div class="content">
             <p class="quote">
                 "I just listened to it and said to myself,"Man I really love this
@@ -11,18 +13,21 @@
                 <img src="../assets/img/band_interview_play_icon.png" alt="play image">
             </div>
         </div>
+        <!-- end content -->
     </section>
+    <!-- end section -->
 </template>
 
 <script>
-
 export default {
     name: "ThirdSection",
 };
 </script>
 
 <style scoped lang="scss">
+    // IMPORT AREA
     @import "../style/Variables.scss";
+
     section {
         height: 450px;
         background-image: url('../assets/img/home-testimonial-parallax.jpg');
@@ -30,6 +35,7 @@ export default {
         display: flex;
         align-items: center;
     }
+
     .quote {
         font-style: oblique;
         width: 35%;
@@ -42,6 +48,5 @@ export default {
         display: inline-block;
         margin: 20px;
         cursor: pointer;
-    }
-    
+    }  
 </style>

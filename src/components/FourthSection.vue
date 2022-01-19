@@ -1,5 +1,7 @@
 <template>
+    <!-- start section -->
     <section id="live-dates" class="fourth-section"> 
+        <!-- start wrapper -->
         <div class="container65">
             <h2>
                 Live dates
@@ -8,6 +10,7 @@
             <p class="common-text-medium">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, obcaecati dolor aut dolore in beatae repudiandae illo qui. Animi sed fuga autem alias explicabo eveniet vitae quia nesciunt commodi exercitationem.
             </p>
+            <!-- start list containers -->
             <div class="list-container">
                 <div class="single-list">
                     <i v-on:click="open1=!open1" :class="{show:!open1}" class="fas fa-plus fa-xs"></i>
@@ -93,8 +96,11 @@
                     </div>
                 </div>
             </div>
+            <!-- end list containers -->
         </div>
+        <!-- end wrapper -->
     </section>
+    <!-- end section -->
 </template>
 
 <script>
