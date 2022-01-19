@@ -40,7 +40,8 @@ export default {
         height: 50px;
         width: 50px;
         display: inline-block;
-        margin: 20px
+        margin: 20px;
+        cursor: pointer;
     }
     
 </style>

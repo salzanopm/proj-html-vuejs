@@ -10,7 +10,8 @@
             </p>
             <div class="list-container">
                 <div class="single-list">
-                    <i v-on:click="open1=!open1" class="fas fa-plus fa-xs"></i>
+                    <i v-on:click="open1=!open1" :class="{show:!open1}" class="fas fa-plus fa-xs"></i>
+                    <i v-on:click="open1=!open1" :class="{show:open1}" class="fas fa-minus minus-container"></i>
                     <p class="text-primary-color">nffoiefofoeof</p>  
                 </div>
                 <div :class="{show:open1}" class="opensection">
@@ -25,7 +26,8 @@
             </div>
             <div class="list-container">
                 <div class="single-list">
-                    <i v-on:click="open2=!open2" class="fas fa-plus fa-xs"></i>
+                    <i v-on:click="open2=!open2" :class="{show:!open2}" class="fas fa-plus fa-xs"></i>
+                    <i v-on:click="open2=!open2" :class="{show:open2}" class="fas fa-minus minus-container"></i>
                     <p class="text-primary-color">nffoiefofoeof</p>  
                 </div>
                 <div :class="{show:open2}" class="opensection">
@@ -40,7 +42,8 @@
             </div>
             <div class="list-container">
                 <div class="single-list">
-                    <i v-on:click="open3=!open3" class="fas fa-plus fa-xs"></i>
+                    <i v-on:click="open3=!open3" :class="{show:!open3}" class="fas fa-plus fa-xs"></i>
+                    <i v-on:click="open3=!open3" :class="{show:open3}" class="fas fa-minus minus-container"></i>
                     <p class="text-primary-color">nffoiefofoeof</p>  
                 </div>
                 <div :class="{show:open3}" class="opensection">
@@ -55,7 +58,8 @@
             </div>
             <div class="list-container">
                 <div class="single-list">
-                    <i v-on:click="open4=!open4" class="fas fa-plus fa-xs"></i>
+                    <i v-on:click="open4=!open4" :class="{show:!open4}" class="fas fa-plus fa-xs"></i>
+                    <i v-on:click="open4=!open4" :class="{show:open4}" class="fas fa-minus minus-container"></i>
                     <p class="text-primary-color">nffoiefofoeof</p>  
                 </div>
                 <div :class="{show:open4}" class="opensection">
@@ -70,25 +74,11 @@
             </div>
             <div class="list-container">
                 <div class="single-list">
-                    <i v-on:click="open5=!open5" class="fas fa-plus fa-xs"></i>
+                    <i v-on:click="open5=!open5" :class="{show:!open5}" class="fas fa-plus fa-xs"></i>
+                    <i v-on:click="open5=!open5" :class="{show:open5}" class="fas fa-minus minus-container"></i>
                     <p class="text-primary-color">nffoiefofoeof</p>  
                 </div>
                 <div :class="{show:open5}" class="opensection">
-                    <div class="img-container">
-                        <img src="../assets/img/fss-demo-main.jpg" alt="">
-                    </div>
-                    <div class="text-container">
-                        <h5>dnfknifief</h5>
-                        <p>dnifbifv</p>
-                    </div>
-                </div>
-            </div>
-            <div class="list-container">
-                <div class="single-list">
-                    <i v-on:click="open6=!open6" class="fas fa-plus fa-xs"></i>
-                    <p class="text-primary-color">nffoiefofoeof</p>  
-                </div>
-                <div :class="{show:open6}" class="opensection">
                     <div class="img-container">
                         <img src="../assets/img/fss-demo-main.jpg" alt="">
                     </div>
@@ -108,11 +98,11 @@ export default {
     name: "FourthSection",
      data() {
         return {
-            open1:false,
-            open2:false,
-            open3:false,
-            open4:false,
-            open5:false
+            open1:true,
+            open2:true,
+            open3:true,
+            open4:true,
+            open5:true
         }
     }
 };
@@ -130,9 +120,22 @@ export default {
 
         i {
             padding: 0 10px;
+            margin: 5px;
         }
     }
+
+    .minus-container {
+        height: 20px;
+        width: 20px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
     
+
+
     .single-list {
         display: flex;
         align-items: center;
