@@ -5,55 +5,61 @@
                 Latest band news
             </h2>
             <hr>
-            <p class="common-text2">
+            <p class="common-text-medium">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, obcaecati dolor aut dolore in beatae repudiandae illo qui. Animi sed fuga autem alias explicabo eveniet vitae quia nesciunt commodi exercitationem.
             </p>
             <div class="picture-section">
                 <div class="row">
                     <div class="left-column">
                         <div class="box">
-                            <div class="top-box">
+                            <div class="single-card-top-box">
+                                <div class="overlay"></div>
                                 <div class="text-card">
                                     <h5>weweewewe</h5>
-                                    <p class="common-text2">efffeef</p>
+                                    <p class="common-text-medium">efffeef</p>
                                 </div>
                             </div>
                             <div class="middle-box">
                                 <div class="case">
-                                    <div class="left-case">
+                                    <div class="single-card-left-case">
+                                        <div class="overlay"></div>
                                         <div class="text-card">
                                         <h5>weweewewe</h5>
-                                        <p class="common-text2">efffeef</p>
+                                        <p class="common-text-medium">efffeef</p>
                                     </div>  
                                     </div>
-                                    <div class="right-case">
+                                    <div class="single-card-right-case">
+                                        <div class="overlay"></div>
                                         <div class="text-card">
                                             <h5>weweewewe</h5>
-                                            <p class="common-text2">efffeef</p>
+                                            <p class="common-text-medium">efffeef</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="bottom-box">
+                            <div class="single-card-bottom-box">
+                                <div class="overlay"></div>
                                 <div class="text-card">
                                     <h5>weweewewe</h5>
-                                    <p class="common-text2">efffeef</p>
+                                    <p class="common-text-medium">efffeef</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="right-column">
                         <div class="row">
-                            <div class="up-row">
+                            <div class="single-card-up-row">
+                                <div class="overlay"></div>
                                 <div class="text-card">
                                     <h5>weweewewe</h5>
-                                    <p class="common-text2">efffeef</p>
+                                    <p class="common-text-medium">efffeef</p>
                                 </div>
                             </div>
-                            <div class="down-row">
+                            <div class="single-card-down-row">
+                                <div class="overlay"></div>
                                 <div class="text-card">
                                     <h5>weweewewe</h5>
-                                    <p class="common-text2">efffeef</p>
+                                    <p class="common-text-medium">efffeef</p>
                                 </div>
                             </div>
                         </div>
@@ -142,17 +148,18 @@ export default {
         width: 100%;
     }
 
-    .top-box {
+    .single-card-top-box {
         height: calc(25% - 5px);
         background-image: url('../assets/img/blog_music_techo.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
         margin-bottom: 5px;
+        
 
     }
 
-    .bottom-box {
+    .single-card-bottom-box {
         height: calc(25% - 5px);
         background-image: url('../assets/img/blog_flavor_rock.jpg');
         background-size: cover;
@@ -166,7 +173,7 @@ export default {
         margin: 5px 0;
     }
 
-    .left-case {
+    .single-card-left-case {
         width: calc(50% - 5px);
         background-image: url('../assets/img/blog-post3.jpg');
         background-size: cover;
@@ -175,7 +182,7 @@ export default {
         margin-right: 5px;
     }
 
-    .right-case {
+    .single-card-right-case {
         width: calc(50% - 5px);
         background-image: url('../assets/img/blog-post4.jpg');
         background-size: cover;
@@ -186,7 +193,7 @@ export default {
 
 
 
-    .up-row {
+    .single-card-up-row {
         width: 100%;
         height: calc(100% - 5px);
         background-image: url('../assets/img/blog-post1.jpg');
@@ -196,7 +203,7 @@ export default {
         margin-bottom: 5px;
     }
 
-    .down-row {
+    .single-card-down-row {
         width: 100%;
         height: calc(100% - 5px);
         background-image: url('../assets/img/blog-post2.jpg');
@@ -227,12 +234,23 @@ export default {
         background-color: $brand_secondary_color;
     }
 
+    .overlay {
+        display: none;
+        background-color: rgba(230, 100, 100, .5);
+        width: 100%;
+        height: 100%;        
+    }
+    div[class^="single-card"]:hover .overlay {
+        display: block;
+    }
+
     h5 {
         height: 50%;
         padding: 10px;
         color: $brand_primary_color;
     }
 
+   
 
 
 

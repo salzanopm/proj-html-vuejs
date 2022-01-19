@@ -46,6 +46,10 @@ button {
     text-transform: uppercase;
     color: white;
 }
+button:active {
+    background-color: white;
+    color: black;
+}
 
 .button-red {
     background-color: $brand_primary_color;
@@ -64,6 +68,11 @@ button {
     height: 100px;
     background-color: $brand_primary_color;
     border: solid 1px $brand_primary_color;
+}
+.button-big:hover {
+    background-color: white;
+    border: solid 1px white;
+    color: black;
 }
 
 // HR 
@@ -94,12 +103,16 @@ h5 {
     font-size: large;
 }
 
-.common-text2 {
+.common-text-big {
+    font-size: 15px;
+}
+
+.common-text-medium {
     font-size: 12px;
     color: $medium_text_color;
 }
 
-.common-text3 {
+.common-text-small {
     font-size: 8px;
     color: $medium_text_color;
 }

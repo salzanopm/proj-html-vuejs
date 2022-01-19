@@ -1,5 +1,5 @@
 <template>
-    <button class="button-big">
+    <button class="button-big common-text-big">
         view all live dates
     </button>
 </template>

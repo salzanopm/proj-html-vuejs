@@ -5,7 +5,7 @@
         <img src="../assets/img/logo_footer.png" alt="Avada image logo">
       </div>
       <div>
-        <ul class="list-container common-text2">
+        <ul class="list-container common-text-medium">
           <li v-for="(link, index) in links" :key="index" :class="{ current: link.current }">
             <a :href="link.url">{{ link.text }}</a>
           </li>
@@ -14,7 +14,7 @@
     </div>
     <div class="footer-bottom">
       <div>
-        <ul class="list-container common-text3">
+        <ul class="list-container common-text-small">
           <li>&copy; Copyright 2012 - 2021</li>
           <li>|</li>
           <li>AVADA THEME BY THEMEFUSION</li>
